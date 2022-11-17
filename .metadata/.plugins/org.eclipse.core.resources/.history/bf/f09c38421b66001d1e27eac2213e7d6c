@@ -1,0 +1,5 @@
+package com.bxtr.spring;
+
+public class BookDao {
+
+}
