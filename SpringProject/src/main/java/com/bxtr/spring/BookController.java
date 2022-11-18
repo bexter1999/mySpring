@@ -31,19 +31,31 @@ public class BookController {
 	
 	
 	//데이터의 변경(입력)이 일어나므로 http 메소드는 POST 방식으로 처리
-	@RequestMapping(value="/create", method = RequestMethod.POST)
-	//@RequestParam 어노테이션을 통해 HTTP 파라미터를 map 변수에 자동으로 바인딩
-	public ModelAndView createPost(@RequestParam Map<String, Object>map) {
-		ModelAndView mav = new ModelAndView();
-		
-		String bookId = this.bookService.create(map);
-		if(bookId == null) {
-			mav.setViewName("redirect:/create");
-			/* 데이터 입력이 실패했을경우 데이터베이스에 쓰지마 라는 뜻으로 다시 첫화면으로 리다이렉트함 */
-		} else {
-			mav.setViewName("redirect:/detail?bookId=" + bookId);
-			/* 데이터 입력이 성공하면 상세 페이지로 이동 */
-		}
-		return mav;
-	}
+	@RequestMapping(value = "/create", method = RequestMethod.POST)
+	public ModelAndView createPost(@RequestParam Map<String, Object> map) {
+	    ModelAndView mav = new ModelAndView();
+
+	    String bookId = this.bookService.create(map);
+	    //데이터 입력이 실패일 경우 다시 데이터를 입력받아야 하므로 생성 화면으로 리다이렉트
+	    if (bookId == null) {
+	        mav.setViewName("redirect:/create");
+	    }else {
+	    //데이터 입력이 성공하면 상세 페이지로 이동
+	        mav.setViewName("redirect:/detail?bookId=" + bookId);	
+	    }		
+
+	    return mav;
+	}		
+	
+	@RequestMapping(value = "/detail", method = RequestMethod.GET)
+    public ModelAndView detail(@RequestParam Map<String, Object> map) {
+        Map<String, Object> detailMap = this.bookService.detail(map);
+	    
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("data", detailMap);
+        String bookId = map.get("bookId").toString();
+        mav.addObject("bookId", bookId);
+        mav.setViewName("/book/detail");
+        return mav;
+    }	
 }

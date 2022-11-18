@@ -19,4 +19,7 @@ public class BookDao {
 		return this.sqlSessionTemplate.insert("book.insert",map);
 										/* book = 네임 스페이스 , insert = id */
 	}
+	public Map<String, Object> selectDetail(Map<String, Object> map) {
+		return this.sqlSessionTemplate.selectOne("book.select_detail",map);
+	}
 }
