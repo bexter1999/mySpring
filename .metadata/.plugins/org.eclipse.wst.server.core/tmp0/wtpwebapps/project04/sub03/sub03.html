@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>sub03</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<meta name="Generator" content="Visual Code"/>
+	<meta name="Author" content="권병석"/>
+	<meta name="Keywords" content="권병석, 병석, 병석 권, Kwon ByeongSeok, ByeongSeok, Kwon, 포트폴리오, 권병석 포트폴리오, portfolio, ByeongSeok's portfolio, 프로젝트, 프로젝트 페이지, 퍼블리싱"/>
+	<meta name="Description" content="권병석의 포트폴리오"/>
+    
+	<link rel="shortcut icon" href="images/police-hat.ico">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+    function fn_validate(){ 
+        // <form> 태그의 name 속성으로 <form> 태그의 객체를 받아온다.
+        var frmLogin=document.frmLogin;
+        // <form> 태그 내 <input> 태그의 name 속성으로 입력한 ID와 비밀번호를 받아 온다.
+        var user_id=frmLogin.user_id.value;
+        var user_pwd=frmLogin.user_pwd.value;
+  
+        if((user_id.length==0 ||user_id=="") ||(user_pwd.length==0 ||user_pwd=="")){
+            alert("아이디와 비밀번호는 필수입니다.");
+        } else {
+            // <form> 태그의 전송 장식을 post로 설정한다.
+            frmLogin.method="post";
+            // action 속성을 서블릿 매핑 이름인 login5로 설정
+            frmLogin.action="login";
+            // 자바스크립트에서 서블릿으로 전송
+            frmLogin.submit();
+        }
+    }
+</script>
+</head>
+<body>
+    <header id="header">
+        <div class="headerTit cf">
+			<h1><span class="hidden">경찰청</span><a href="../index.html"><img src="images/mark.png" id="policeMainLogo" class="fl" alt="경찰청 메인 로고" tabindex=""></a>
+			<a href="../sub01/sub01.html"><img src="images/banner_taegeukgi.png" id="taegeukgi" class="fl" alt="태극기" tabindex=""></a></h1>
+			<span><a href="../sub02/sub02.html" tabindex="" class="fl">국가상징<br/>알아보기</a></span>
+			<form action="#" method="get" class="fl">
+				<fieldset class="headerFieldSet">
+					<label>
+						<input type="search" name="headerSearch" id="headerSearch" placeholder="검색어를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요.'">
+					</label>
+					<label>
+						<button type="submit" name="headerSubmit" class="headerSubmit">
+							검색
+						</button>
+					</label>
+				</fieldset>
+            </form>
+			<div id="login"><a href="sub03.html" tabindex="">Login ▶</a></div>
+			<div class="fontCustom">
+				<div OnClick="location.href ='#'" style="cursor:pointer;"><a href="../sub01/sub01.html" tabindex="">ㅡ</a></div>
+				<div OnClick="location.href ='#'" style="cursor:pointer;"><a href="../sub02/sub02.html" tabindex="">가</a></div>
+				<div class="fontCustomMG"><a href="../sub01/sub01.html" tabindex="">+</a></div>
+			</div>
+		</div>
+        <div class="headerMenu">
+			<div class="menu">
+				<a href="../sub02/sub02.html"><img src="images/menu.png" id="headerMenuBtn" alt="메뉴 버튼" tabindex=""></a>
+				<div class="nav cf">
+					<div class="menuTit news"><a href="../sub01/sub01.html" title="알림/소식" tabindex=""><h2><span>알림/소식</span></h2></a>
+						<div class="twoInner">
+							<div class="twoDepth cf">
+								<ul class="menuML">
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="알림">알림</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 공지사항</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 보도자료</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 사실확인</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 채용공고</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 입찰공고</a></li>
+								</ul>
+								<ul> 
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="소식">소식</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 홍보콘텐츠</a></li>
+								</ul>
+								<ul>     
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="정책홍보실">정책홍보실</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 목표(비전)</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 정책실명제</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 자치경찰제</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 인권경찰</a></li>
+								</ul>    
+								<ul>
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="경찰청 인권위원회">경찰청 인권위원회</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 위원장 인사말</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 활동소식</a></li>
+								</ul>
+							</div>
+						</div>		
+					</div>
+					<div class="menuTit"><a href="../sub02/sub02.html" title="소통/공감" tabindex=""><h2><span>소통/공감</span></h2></a>
+						<div class="twoInner">
+							<div class="twoDepth cf">
+								<ul class="menuML">        
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="생활정보">생활정보</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 주요뉴스</a></li>
+								</ul> 
+								<ul>        
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="적극행정">적극행정</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 제도소개</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 국민참여</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 적극행정 자료실</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 적극행정 우수공무원</a></li>
+								</ul> 
+								<ul>       
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="소통게시판">소통게시판</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 자유게시판</a></li>
+								</ul>
+								<ul>      
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="추모관">추모관</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 순직경찰관추모</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 경찰영웅</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 경찰기념공원</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 추모관공지</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 행사갤러리</a></li>
+								</ul>
+							</div>	
+						</div>	
+					</div>
+					<div class="menuTit"><a href="../sub01/sub01.html" title="신고/지원" tabindex=""><h2><span>신고/지원</span></h2></a>
+						<div class="twoInner">
+							<div class="twoDepth cf">
+								<ul class="menuML">
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="범죄신고/상담">범죄신고/상담</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 경찰민원포털</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 가정,학교,성폭력 등<br>&nbsp; 신고/상담</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 성범죄 상담 챗봇</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 스마트 국민제보</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 유실물 통합포털</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 산업기술유출 신고</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 안전신문고</a></li>
+								</ul>
+								<ul>    
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="사이버안전지킴이">사이버안전지킴이</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 사이버범죄 신고/상담</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 사이버범죄 예방교육 신청</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 인터넷 사기 의심 전화·계좌번호<br>&nbsp; 조회</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 사이버범죄 예방홍보물</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="안심 서비스">안심 서비스</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 순찰장소 신청</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="치안정보/지원">치안정보/지원</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 회복적경찰활동 및<br>&nbsp; 범죄피해자 지원</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="각종 서식 다운로드">각종 서식 다운로드</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="menuTit"><a href="../sub02/sub02.html" title="정보공개" tabindex=""><h2><span>정보공개</span></h2></a>
+						<div class="twoInner">		
+							<div class="twoDepth cf">
+								<ul class="menuML">
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="정보공개제도">정보공개제도</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 제도안내</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 법령/서식</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 수수료안내</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 접수처안내</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 정보공개편람/청구</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 정보목록</a></li>
+								</ul>
+								<ul> 
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="재정현황">재정현황</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 사업설명자료</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 국회심의과정</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 예산확정현황</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 예산집행현황</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="사전정보공표">사전정보공표</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 사전정보공표목록</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 정보공개자료실</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 비공개세부기준</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="공공데이터">공공데이터</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 경찰백서</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 공공데이터 개방</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 경찰통계자료</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 경찰범죄통계</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 경찰접수 교통사고 현황</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 통계연보</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="menuTit"><a href="../sub01/sub01.html" title="법령/정책" tabindex=""><h2><span>법령/정책</span></h2></a>
+						<div class="twoInner">
+							<div class="twoDepth cf">
+								<ul class="menuML">
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="법령정보">법령정보</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 입법예고</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 행정예고</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 개정법령</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 소관법령</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 훈령예규</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 법령검색</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 판례검색</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="국회정보공개">국회정보공개</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 국회제출자료</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 치안정책자료</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub01/sub01.html">- 국회현장</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="규제개혁">규제개혁</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 추진과제</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 규제혁신</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 규제개혁신문고</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 규제개혁포털</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 국민 규제입증요청</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="menuTit"><a href="../sub02/sub02.html" title="기관소개" tabindex=""><h2><span>기관소개</span></h2></a>
+						<div class="twoInner">		
+							<div class="twoDepth cf">
+								<ul class="menuML">
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="열린청장실">열린청장실</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 청장소개</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 청장동정</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 청장과의 대화</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 역대청장소개</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="조직안내">조직안내</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 조직구성도</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 부서별연락처</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 전국경찰관서안내</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 관광경찰</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub02/sub02.html" title="경찰의이해">경찰의이해</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 포돌이/포순이</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 상징</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 계급과역할</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 장비소개</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 경찰헌장</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 서비스헌장</a></li>
+								</ul>
+								<ul>
+									<li class="menuSTit"><a href="../sub01/sub01.html" title="경찰역사">경찰역사</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 민주·인권·민생경찰의 뿌리</a></li>
+									<li class="menuSText"><a href="../sub02/sub02.html">- 경찰역사순례길</a></li>
+									<li class="menuSText"><a href="../sub01/sub01.html">- 역사자료실</a></li>
+									<li class="menuSText twoDepthPaddingBtm"><a href="../sub02/sub02.html">- 경찰조직연혁</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="menuTit englishMenu"><a href="../sub01/sub01.html" title="ENGLISH" tabindex=""><h2>ENGLISH</h2></a></div>	
+				</div>
+			</div>
+		</div>
+        <div class="headerImg"></div>
+    </header>
+    <section id="section">
+		<div class="secLoginLinkBox">
+			<div class="secLoginLink">
+				<a href="../index.html"><img src="images/home.PNG" alt="홈 버튼" tabindex=""></a>
+				<div class="secLoginLinkText" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">메뉴 ></div>
+				<div class="secLoginLinkText" OnClick="location.href ='sub03.html'" style="cursor:pointer;">로그인 / 비밀번호</div>
+				<div class="secLoginLinkText bgGray" OnClick="location.href ='sub03.html'" style="cursor:pointer;">로그인</div>
+				<a href="../sub01/sub01.html"><img src="images/link.png" id="link" alt="링크" tabindex=""></a>
+				<a href="../sub02/sub02.html"><img src="images/print.PNG" id="print" alt="프린트" tabindex=""></a>
+			</div>
+		</div>
+		<div class="secLoginWarning">
+			<h2 class="secLoginWarningLoginText">로그인</h2>
+			<div class="secLoginWarningLoginNotice">
+				<div class="secLoginWarningLoginNoticeL">
+					<img src="images/shinhanWarning.PNG" alt="신한은행 주소 이미지">
+				</div>
+				<div class="secLoginWarningLoginNoticeR">
+					<div class="secLoginWarningLoginNoticeMarginT">경찰청은 보안강화 등을 이유로 보안카드번호(3개 이상 또는 전체)를 요구하지 않습니다.</div>
+					<div>경찰청 홈페이지는 인터넷 주소창이 녹색으로 표시되거나 보안 자물쇠가 있습니다.</div>
+					<div>수사기관 등 공공기관은 어떤 명목으로도 통장 비밀번호 등 금융정보를 묻거나 범죄에 연루되었다는 등의<br>이유로 돈을 요구하지 않습니다.</div>
+				</div>
+			</div>
+		</div>
+		<div class="secLoginBox">
+			<div class="secLoginBoxL">
+				<div class="certificateGY"><a href="sub03.html" tabindex="">공인인증서 로그인</a></div>
+				<div class="certificateGD"><a href="sub03.html" tabindex="">공동인증서 로그인 <span>(구 공인인증서)</span></a></div>
+				<form action="#" method="post" class="certificateForm">
+					<label for="use" class="certificateAutoPopup">인증서 자동 팝업
+						<input type="radio" id="use" name="certificate"> 사용
+					</label>
+					<label for="nouse">
+						<input type="radio" id="nouse" name="certificate"> 사용안함
+					</label>
+				</form>
+				<div class="secLoginBoxLSpanBox">
+					<span class="secLoginBoxLSpanBR secLoginBoxLSpanML secLoginBoxLPR"><a href="sub03.html">인증서발급/재발급</a></span>
+					<span class="secLoginBoxLSpanBR secLoginBoxLPR secLoginBoxLPL"><a href="sub03.html">타 인증서 등록</a></span>
+					<span class="secLoginBoxLPL"><a href="sub03.html">인증센터</a></span>
+				</div>
+			</div>
+			<div class="secLoginBoxR">
+				<form class="secLoginBoxForm" method="post" name="frmLogin" encType="UTF-8">
+					<label for="idBox">
+						<input type="text" id="idBox" name="user_id" class="guideText" value="이용자 ID">
+					</label>
+					<label for="passwordBox">
+						<input type="password" id="passwordBox" name="user_pwd" class="guideText" value="비밀번호">
+					</label>	
+					<input type="button" onClick="fn_validate()" class="idLoginBtn" value="로그인" style="cursor:pointer">
+				</form>
+				<div class="secLoginBoxRC">
+					<div class="secLoginBoxRCBox">
+						<span class="secLoginBoxRCBR"><a href="sub03.html" tabindex="">아이디 찾기</a></span>
+						<span class="secLoginBoxRCBR pdL"><a href="sub03.html" tabindex="">비밀번호 재설정</a></span>
+						<span><a href="sub03.html" tabindex="" class="pdL">회원가입</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="secLoginNotice">
+			<div class="secLoginNoticeT cf">
+				<img src="images/i.png" class="i fl" alt="i">
+				<div class="secLoginNoticeTText fl">안전한 경찰청 이용을 위한 <span class="spanFB">이용자 유의사항</span></div>
+			</div>
+			<div class="secLoginNoticeB">
+				<img src="images/dengen.png" class="logout" alt="로그아웃">
+				<img src="images/monitor.png" class="autoLogout" alt="자동 로그아웃">
+				<img src="images/guard.png" class="passwordChange" alt="암호 변경">
+				<img src="images/chain.png" class="closeService" alt="서비스 이용 제한">
+				<div class="logoutText fl">개인정보 보호를 위해 서비스<br>이용 중 자리를 비우게 될 경우<br>반드시 <span>로그아웃</span> 하세요.</div>
+				<div class="autoLogoutText fl ">약 10분 동안 화면이동이 없는<br>경우 고객님의 개인정보보호를<br>위해 <span>자동 로그아웃</span> 처리됩니다.</div>
+				<div class="passwordChangeText fl">비밀번호 및 인증서 암호는<span>주기<br>적으로 변경관리</span>하시고 타인<br>에게 노출되지 않도록 주의하세요.</div>
+				<div class="closeServiceText fl"><span>비밀번호 5회 오류</span> 시 온라인<br>서비스 <span>이용이 제한</span>되며 <span>비밀번호<br>재설정</span> 후 이용이 가능합니다</div>
+			</div>
+		</div>
+		<div class="secLoginService">
+			<div class="secLoginServiceL">
+				<div>자주묻는질문</div>
+				<ul>
+					<li class="pdT10"><a href="../sub01/sub01.html" tabindex="">- 경찰청 신규 가입했습니다. 인증서 발급은 어떻게 하나요?</a></li>
+					<li><a href="../sub02/sub02.html" tabindex="">- 타기관에서 발급된 공동인증서(구 공인인증서)가 있는경우 어떻게 해…</a></li>
+					<li><a href="../sub01/sub01.html" tabindex="">- 통합프로그램 설치안내</a></li>
+					<li><a href="../sub02/sub02.html" tabindex="">- 경찰청 이용시 유의할 사항이 있나요?</a></li>
+				</ul>
+			</div>
+			<div class="secLoginServiceR">
+				<div class="secLoginServiceRLeft">
+					<div class="callCenter">민원센터</div>
+					<img src="images/callImg.png" class="callImg" alt="전화">
+				</div>
+				<div class="secLoginServiceRRight">
+					<div class="pdT20">평일 09:00 ~ 18:00 (경찰청 휴무일 제외)</div>
+					<div class="pdT10">국내&nbsp;&nbsp;<span class="callNumberBlue">1599-8000,</span> 1577-8000, 1544-8000</div>
+					<div class="pdT5">해외에서 국내로 걸 때 82-2-3449-8000</div>
+					<div class="pdT5">외국어 1577-8380</div>
+					<div class="pdT5">(해외에서 국내로 걸 때 82-2-3449-8380)</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <footer id="footer">
+		<div class="footerNuriBox">
+			<div class="footerNuri">
+				<div>
+					<div class="buserNuri fl" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">부서별 누리집</div>
+					<div class="fl" OnClick="location.href ='../sub02/sub02.html'" style="cursor:pointer;">시·도 경찰청 누리집</div>
+					<div class="fl" OnClick="location.href ='../sub01/sub01.html'" style="cursor:pointer;">부속기관 누리집</div>
+					<div class="fl" OnClick="location.href ='../sub02/sub02.html'" style="cursor:pointer;">연계기관 누리집</div>
+					<a href="sub03.html" class="fl"><img src="images/up.png" class="footerNuriImg" alt="페이지 상단으로 올라가기" tabindex=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="footerPolicyBox">
+			<div class="footerPolicy">
+				<div><a href="../sub01/sub01.html" class="privacyPolicy">개인정보처리방침</a></div>
+				<div><a href="../sub02/sub02.html" class="copyRightPolicy">저작권정책</a></div>
+				<div><a href="../sub01/sub01.html" class="publicData">공공데이터 이용정책</a></div>
+				<div><a href="../sub02/sub02.html" class="documentDownload">문서 보기 프로그램 내려받기</a></div>
+				<div><a href="../sub01/sub01.html" class="guide">이용안내</a></div>
+				<div><a href="../sub02/sub02.html" class="organization">정부·지자체 조직도</a></div>
+			</div>
+		</div>
+		<div class="footerAddressBox">
+			<div class="footerAddress">
+				<div class="footerAddressTextBox">
+					<div class="footerAddressText">
+						<address>
+							<span class="addressPolice footerBR">(우)038739 서울특별시 서대문구 통일로 97</span>
+							<span class="addressPolice footerBR">민원대표전화 182(유료)</span>
+							<span class="addressPolice colorYellow">찾아오시는길</span>
+							<div class="copyRightPolice">COPYRIGHTⓒ 2018 NATIONAL POLICE AGENCY</div>
+							<div class="warningMessage">본 홈페이지에 게시판 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</div>
+						</address>
+					</div>
+				</div>
+				<div class="footerValidityImg">
+					<a href="../sub01/sub01.html"><img src="images/footer_webwatch.png" id="webWatch" alt="WebAccessibility" tabindex=""></a>
+					<a href="../sub02/sub02.html"><img src="images/footer_eprivacy.png" id="ePrivacy" alt="ePrivacy" tabindex=""></a>
+				</div>
+			</div>
+		</div>	
+    </footer>
+</body>
+</html>

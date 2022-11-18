@@ -1,0 +1,185 @@
+html{overflow-y: scroll;} 
+*{margin: 0 auto; padding: 0;}
+body{font-family:'留묒� 怨좊뵓', sans-serif; color: #333333;}
+ul, li, ol, dl{list-style: none;}
+img{border: 0;}
+a{text-decoration: none;}
+.fl{float: left;}
+.fr{float: right;}
+.cb{clear: both;}
+.cf:after{clear: both; display: block; content: '';}
+.hidden{display: none;}
+.colorRed{color: #d25747;}
+fieldset{border: none;}
+
+#header{width: 100%; height: 371px;}
+	.headerTit{width: 1420px; height: 83px;}
+	.headerMenu{width: 100%; height: 80px;}
+	.headerImg{width: 100%; height: 208px;}
+
+#section{width: 100%; height: 50px;}
+	.secLoginLinkBox{width:100%; height: 58px;}
+		.secLoginLink{width: 1419px; height: 58px;}
+	.join_box {width: 400px; margin: 0 auto;}
+.join_box .signup_title {display:block; font-size: 33px; color:#333333; margin-top: 40px; margin-bottom: 30px; width: 390px; height: 80px; line-height:80px; padding-left: 10px; border-bottom:1px solid #dcdcdc; border-bottom: solid 1px #dddddd;}
+.join_box .form input {width: 100%; height: 50px; line-height:50px; margin-bottom: 10px; border:1px solid #dadada; padding-left:10px; box-sizing:border-box;}
+.join_box input:focus {outline:none; border:1px solid #2d71c4;}
+.join_box .col1 {width: 110px; margin-top: 4px; margin-bottom:10px; font-weight:bold; margin-left: 5px;}
+.join_box .col2 {width: 400px;}
+.join_box .id {margin-top: 20px;}
+.form>.col2 label {display:block; position:relative; width:100%; height:50px; margin-bottom: 10px;}
+.form>.col2 .info_image {position:absolute; right:10px; top:7.5px;}
+.id_image {width: 35px; height:35px; background: url(../images/login_id_icon.png) no-repeat 0 0; }
+.pass_image {width: 35px; height:35px; background: url(../images/m_icon_pw_step.png) no-repeat 0 0;}
+.pass_confirm_image {width: 35px; height:35px; background: url(../images/m_icon_pw_step.png) no-repeat -43px 0; top:0px;}
+.join_box .bottom_line {margin-top: 20px; margin-bottom:30px; border-bottom: solid 1px #cccccc;}
+.id_info_box {position:relative;}
+.signup_info {width: 100%; line-height:20px; color:red; margin-bottom:20px; background-color:#fdfdfd; font-size:15px; padding-left:10px;}
+.color_blue {color:#2d71c4;}
+.id_check_text {width: 100%; line-height:20px; color:red; margin-bottom:20px; background-color:#fdfdfd; font-size:15px; position:absolute; top:0; left:0; z-index:2; display:none; padding-left:10px;}
+.buttons {width: 100%; margin-bottom: 60px;}
+.save_button, .reset_button {width:47.5%; box-sizing: border-box; display:block; text-align: center; font-size: 18px; border-radius:3px; padding:18px 15px;color:#fdfdfd; cursor:pointer;}
+.save_button {background-color: #04264c;  border: 1px solid #04264c;}
+.reset_button {background-color: #cccccc;  border: 1px solid #cccccc; color:#555555;  margin-right: 5%;}	
+#footer{width: 100%; height: 283px;}
+	.footerNuriBox{width:100%; height: 80px; background-color: #f1f1f1;}
+		.footerNuri{width: 1420px; height: 80px;}
+	.footerPolicyBox{width: 100%; height: 51px; background-color: #30343f;}
+		.footerPolicy{width: 1420px; height: 51px;}
+	.footerAddressBox{width: 100%; height: 152px; background-color: #3b414d;}
+		.footerAddress{width: 1420px; height: 152px; background-color: #3b414d;}
+		.footerAddressTextBox{display: inline-block; width: 850px; height: 152px;}
+		.footerValidityImg{width: 230px; height: 152px; float: right;}
+
+
+/* header */
+
+#policeMainLogo{width:215px; height:83px;}
+#taegeukgi{width: 55px; height: 35px; margin-top: 25px; margin-left: 30px; border: 1px solid #eaeaea;}
+.headerTit > span > a{font-size: 12px; color: #333333; font-weight: bold; margin-left: 10px; margin-top: 30px; letter-spacing: -1px;}
+#headerSearch{border: 1px solid #d2d2d2; font: 15px '留묒� 怨좊뵓', sans-serif; font-weight: bold; width: 273px; height: 40px; padding-left: 10px; margin-left: 525px; margin-top: 24px;}
+.headerSubmit{border: none; width: 95px; height: 40px; background-color: #004fa8; font: 15px '留묒� 怨좊뵓', sans-serif; color: white; font-weight: bold; position: relative; right: 5px;}
+.headerFieldSet{border: none;}
+#login > a{font-size: 15px; color: #9a9a9a; display: block;}
+#login{float: left; margin-left: 70px; margin-top: 16px;}
+.fontCustom > div{border: 1px solid #9a9a9a; text-align: center; height: 22px; width: 22px; font: 13px '留묒�怨좊뵓',sans-serif; font-weight: bold; color: #5d5d5d; line-height: 22px; float: left; margin-top: 7px; margin-right: 3px; float: left;}
+.fontCustom > div > a{color: #333333;}
+.fontCustom{margin-left: 60px; float: left;}
+#headerMenuBtn{width: 55px; height: 56px; margin-top: 11px; float: left;}
+.headerMenu{background-color: #04264c;}
+.nav .menuTit> a{font-size: 13px;}
+.menuTit{float: left;}
+.menu{width: 1420px;}
+.nav .menuTit a{font-size: 14px; color: #333333;}
+.menuTit > a{text-align: center; display: block;}
+.nav .menuTit > a:hover > h2 > span{color: #ffb71b;}
+.englishMenu > a:hover > h2{color: #ffb71b;}
+.nav .menuTit:hover .twoInner{display: block;}
+.twoDepth{width: 1420px; margin: 0 auto;}
+.headerMenu{position: relative;}
+.twoInner{display: none; position: absolute; left: 0px; top: 73px;  width: 100%; background-color: white; border-left: 1px solid #c2c2c2; border-right: 1px solid #c2c2c2; box-shadow: 0 0 10px -3px;}.twoDepth > ul{float: left;}
+.twoDepth > ul > li{padding-left: 40px; padding-bottom: 10px;}
+.menuSTit{padding-top: 30px; margin-bottom: 10px;}
+.twoDepth > ul{padding-right: 30px;}
+.twoDepth > ul > li.menuSTit a{font-size: 18px; font-weight: bold; color: #333333;}
+.menuML > li{margin-left: 200px;}
+.menuTit > a span{padding-right: 20px; padding-left: 20px; color: white;}
+.englishMenu h2{padding-left: 20px; padding-right: 20px;}
+.menuTit h2{padding-top: 25px; padding-bottom: 25px; margin-left: 17px; color: white;  letter-spacing: -1px;}
+.news{margin-left: 200px;}
+.headerImg{background: url(../images/sub_visual1.jpg) no-repeat center; background-size: cover;}
+.menuSTit li a{font-size: 14px; color: #333333;}
+.twoDepth > ul > .twoDepthPaddingBtm{padding-bottom: 40px;}
+.twoDepth ul li.menuSText a:hover{color: #ffb71b;}
+.menuSText{font-weight: bold;}       
+
+
+/* section */
+
+.secLoginLinkBox{border-bottom: 1px solid #d2d2d2;}
+.secLoginLink{border-bottom: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2;}
+.secLoginLink > a > img{width: 57px; height: 58px; float: left;}
+.secLoginLink > .secLoginLinkText{width: 240px; height: 58px; float: left; border-right: 1px solid #d2d2d2; font-weight: bold; line-height: 58px; padding-left: 20px;}
+.bgGray{background-color: #eeeeee;}
+#link{float: left; width:55px; height: 58px; margin-left: 410px; border-left: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2;}
+#print{float: left; width:55px; height: 58px; border-right: 1px solid #d2d2d2;}
+.secLoginWarningLoginNoticeL > img{width: 360px; height: 120px; margin-left: 65px; margin-top: 50px;}
+.secLoginWarningLoginNoticeL , .secLoginWarningLoginNoticeR{background-color: #f2f2f2;}
+.secLoginWarningLoginText{font-size: 38px; border-bottom: 1px solid #dcdcdc; padding-top: 45px; padding-bottom: 20px;}
+.secLoginWarningLoginNoticeR > div {font-size: 20px; font-weight: bold; letter-spacing: -1px; line-height: 35px; margin-left: 30px;}
+.secLoginWarningLoginNoticeMarginT{margin-top: 45px;}
+.secLoginBox{border: 1px solid #b7bbd1;}
+.secLoginBoxL > .certificateGY > a{display: block; width: 405px; height: 86px; background-color: #004fa8; border-radius: 5px; color: white; text-align: center; line-height: 86px; font-size: 25px;}
+.secLoginBoxL > .certificateGD > a{display: block; width: 405px; height: 86px; background-color: #768392; border-radius: 5px; color: white; text-align: center; line-height: 86px; font-size: 25px;}
+.secLoginBoxL > .certificateGY{margin-top: 37px;}
+.secLoginBoxL > .certificateGD{margin-top: 15px;}
+.secLoginBoxL > .certificateGD > a > span{font-size: 15px;}
+.certificateForm{margin-top: 20px;}
+.certificateAutoPopup{ margin-left: 165px; letter-spacing: -2px;}
+.certificateAutoPopup input{ margin-left: 38px; width: 22px; height: 22px; margin-top: 3px;}
+.certificateForm > label{font-size: 20px; font-weight: bold;}
+#nouse{width: 22px; height: 22px; margin-left: 25px;}
+.secLoginBoxL > div > span > a{color: #333333; font-size: 20px; font-weight: bold; letter-spacing: -2px;}
+.secLoginBoxL > .secLoginBoxLSpanBox{margin-top: 13px;}
+.secLoginBoxL .secLoginBoxLSpanBR{border-right: 1px solid #dcdcdc;}
+.secLoginBoxL .secLoginBoxLSpanML{margin-left: 155px;}
+.secLoginBoxLPR{padding-right: 15px;}
+.secLoginBoxLPL{padding-left: 8px;}
+.secLoginBoxL{border-right: 1px solid #dcdcdc;}
+.i{width: 37px; height: 35px; margin-top: 68px; padding-right: 5px;}
+.secLoginNoticeTText{font-size: 27px;margin-top: 70px; letter-spacing: -1px;}
+.secLoginNoticeT{border-bottom: 2px solid #dcdcdc;}
+.spanFB{font-weight: bold;}
+.secLoginNoticeB{border-bottom: 2px solid #c8cbdc;}
+.logout{width: 118px; height: 115px; margin-top: 40px; margin-left: 120px;}
+.autoLogout{width: 118px; height: 115px; margin-top: 40px; margin-left: 225px;}
+.passwordChange{width: 118px; height: 115px; margin-top: 40px; margin-left: 235px;}
+.closeService{width: 118px; height: 115px; margin-top: 40px; margin-left: 235px;}
+.logoutText{font-size: 20px; font-weight: bold; margin-top: 20px; margin-left: 60px; letter-spacing: -2px;}
+.autoLogoutText{font-size: 20px; font-weight: bold; margin-top: 20px; margin-left: 110px; letter-spacing: -2px;}
+.passwordChangeText{font-size: 20px; font-weight: bold; margin-top: 20px; margin-left: 90px; letter-spacing: -2px;}
+.closeServiceText{font-size: 20px; font-weight: bold; margin-top: 20px; margin-left: 90px; letter-spacing: -2px;}
+.secLoginServiceL > div{font-size: 27px; font-weight: bold; margin-left: 20px; margin-top: 10px;}
+.secLoginServiceL > ul{margin-left: 20px; margin-top: 10px;}
+.secLoginServiceL > ul > li{font-size: 18px; font-weight: bold; line-height: 40px;}
+.pdt3{padding-top: 3px;}
+.pdT5{padding-top: 5px;}
+.pdT10{padding-top: 10px;}
+.pdT20{padding-top: 20px;}
+.secLoginServiceL > ul > li > a{color: #333333;}
+.callCenter{font-size: 26px; margin-top: 10px; margin-left: 85px;}
+.callImg{width: 80px; height: 80px; margin-left: 95px; margin-top: 25px;}
+.secLoginServiceRRight > div{padding-left: 10px; font-size: 21px; letter-spacing: -1px;}
+.callNumberBlue{color: #3d5ec6; font-size: 35px !important;}
+#idBox{display: block; width: 275px; height: 50px; margin-left: 136px; margin-top: 55px; border: 1px solid #d0d0d0; font: 17px '留묒� 怨좊뵓', sans-serif; padding-left: 10px;}
+#passwordBox{display: block; width: 275px; height: 50px; margin-left: 136px; margin-top: 20px; border: 1px solid #d0d0d0; font: 17px '留묒� 怨좊뵓', sans-serif; padding-left: 10px;}
+.guideText{color: #666666;}
+.idLoginBtn{width: 130px; height: 130px; margin-left: 15px; margin-top: 50px; border: 1px solid #6d7b8a; background-color: #768392; font-size: 22px; font-weight: bold; color: white; border-radius: 10px;}
+.secLoginBoxRCBR{border-right: 1px solid #dcdcdc; padding-right: 15px;}
+.secLoginBoxRC{font-size: 18px; font-weight: bold;}
+.secLoginBoxRCBox > span > a{color: #333333;}
+.secLoginBoxRCBox{margin-left: 175px; margin-top: 15px;}
+.pdL{padding-left: 5px;}
+
+/* footer */
+
+.footerNuri{background-color: #f1f1f1;}
+.footerNuri > div > div{width: 310px; height: 45px; border: 1px solid #c2c2c2; margin-top: 18px; margin-right: 10px; line-height: 45px; padding-left: 10px; font-weight: bold; background-color: white;}	
+.footerNuriImg{width: 44px; height: 45px; margin-top: 18px;}
+.buserNuri{margin-left: 22px;}
+.footerPolicy > div{float: left; font-weight: bold;}
+.footerPolicy{background-color: #30343f;}
+.privacyPolicy{height: 51px; display: block; color: #fbcd32; letter-spacing: -1px; line-height: 49px;}
+.copyRightPolicy{height: 51px; display: block; color: white; letter-spacing: -1px; line-height: 49px; margin-left: 25px;}
+.publicData{height: 51px; display: block; color: white; letter-spacing: -1px; line-height: 49px; margin-left: 22px;}
+.documentDownload{height: 51px; display: block; color: white; letter-spacing: -1px; line-height: 49px; margin-left: 22px;}
+.guide{height: 51px; display: block; color: white; letter-spacing: -1px; line-height: 49px; margin-left: 30px;}
+.organization{height: 51px; display: block; color: white; line-height: 49px; margin-left: 30px; letter-spacing: -1px;}
+.addressPolice{font: 16px '留묒� 怨좊뵓', sans-serif; color: white; font-weight: bold;}
+.footerAddressText > address >.footerBR{border-right: 1px solid #6c6c6c; padding-right: 10px;}
+.footerAddressText > address >.colorYellow{color: #fbcd32; padding-left: 5px;}
+.footerAddressText{padding-top: 40px;}
+.copyRightPolice{color: #9cc4d1; font-weight: bold;}
+.warningMessage{font: 14px '留묒� 怨좊뵓', sans-serif; color: #8da9c8; padding-top: 25px;}
+#webWatch{width: 115px; padding-left: 15px; padding-top: 30px;}
+#ePrivacy{width: 72px; height: 72px; padding-left: 20px;}
